@@ -14,17 +14,16 @@ case class ItemNotAvailableException(message: String) extends RuntimeException
 */
 object AuctionStore {
 	
-	private val mongoClient = MongoClient("localhost", 27017)
+  private val mongoClient = MongoClient("localhost", 27017)
   private val db = mongoClient("auction")
-	val items = db("items")
+  val items = db("items")
 	
-	private def updateItem(item: String, field: String, update: String) =
+  private def updateItem(item: String, field: String, update: String) =
     items.update(MongoDBObject("name" -> item), $set(field -> update))
   
   def getItem(item: String) = items.findOne(MongoDBObject("name" -> item))
 
-	def insert(item: Map[String, Any]) = items.insert(item)
-
+  def insert(item: Map[String, Any]) = items.insert(item)
 
   def setStatus(item: String, status: String) = updateItem(item, "status", status)
 
