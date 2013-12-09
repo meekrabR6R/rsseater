@@ -1,0 +1,22 @@
+[0m[[0minfo[0m] [0m[32mAuctionSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mAdding Skyrim to auctionable items [0m[0m
+[0m[[0minfo[0m] [0m[32m- should return AuctionableItem('Skyrim', 19.99) as head of list[0m[0m
+[0m[[0minfo[0m] [0m[32mAfter item is added [0m[0m
+[0m[[0minfo[0m] [0m[32m- status should be 'pending'[0m[0m
+[0m[[0minfo[0m] [0m[32m- should set have a reserved price of 19.99[0m[0m
+[0m[[0minfo[0m] [0m[32mStarting auction on Skyrim [0m[0m
+[0m[[0minfo[0m] [0m[32m- should set status to 'started'[0m[0m
+[0m[[0minfo[0m] [0m[32mPlacing a sufficiently large bid on an item [0m[0m
+[0m[[0minfo[0m] [0m[32m- should set bid to new bid amount[0m[0m
+[0m[[0minfo[0m] [0m[32m- buyer name should be 'Frank.'[0m[0m
+[0m[[0minfo[0m] [0m[32mPlacing an insufficient bid [0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw InsufficientBidException[0m[0m
+[0m[[0minfo[0m] [0m[32mAttempting to add another item to auction list [0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw ItemAlreadyInAuctionException if item is already available for auction[0m[0m
+[0m[[0minfo[0m] [0m[32m- should add 'World of Smurfcraft.'[0m[0m
+[0m[[0minfo[0m] [0m[32mA successful auction [0m[0m
+[0m[[0minfo[0m] [0m[32m- should set status to 'success.'[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a final bid amount of '30.00.'[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a buyer named 'Freddy'[0m[0m
+[0m[[0minfo[0m] [0m[32mCalling auction on Skyrim with a low bid [0m[0m
+[0m[[0minfo[0m] [0m[32m- should set 'status' to failure.[0m[0m
