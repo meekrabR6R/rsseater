@@ -20,10 +20,10 @@ class Auction {
   def add(name: String, reservedPrice: BigDecimal) = AuctionStore.getItem(name) match {
     case Some(_) => throw ItemAlreadyInAuctionException("item")
     case None => AuctionStore.insert(Map("name" -> name, 
-  	                                 "reservedPrice" -> reservedPrice.toString,
-  	                                 "bid" -> "0",
-  	                                 "status" -> "pending",
-  	                                 "buyer" -> ""
+  	                                "reservedPrice" -> reservedPrice.toString,
+  	                                "bid" -> "0",
+  	                                "status" -> "pending",
+  	                                "buyer" -> ""
   	                             ))
   }
 
