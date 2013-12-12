@@ -9,9 +9,12 @@ case class Item(item: scala.xml.Node) {
   val title = (item \ "title").text
   val link = (item \ "link").text
   val desc = (item \ "description").text
-  val thumb = Thumb((item \\ "@url").toString, 
-                    (item \\ "@width").toString, 
-                    (item \\ "@height").toString)
+  val thumbs = 
+    (for(thumb <- (item \ "thumbnail")) 
+      yield { Thumb((thumb \ "@url").text, 
+                    (thumb \ "@width").text, 
+                    (thumb \ "@height").text)
+            }).toList
   val pubDate = (item \ "pubDate").text
   val category = (item \ "category").text
 }

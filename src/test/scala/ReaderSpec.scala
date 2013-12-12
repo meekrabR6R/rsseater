@@ -50,8 +50,17 @@ class AuctionSpec extends FunSpec {
       it("link for head item should = 'http://www.bbc.co.uk/news/world-africa-25328266#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'") {
         assert(feed.items.head.link === "http://www.bbc.co.uk/news/world-africa-25328266#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa")
       }
+      it("should have 2 thumbs") {
+        assert(feed.items.head.thumbs.count(item => true) === 2)
+      }
       it("thumbnail url for head item should = 'http://news.bbcimg.co.uk/media/images/71670000/jpg/_71670164_71670157.jpg'") {
-        assert(feed.items.head.thumb.url === "http://news.bbcimg.co.uk/media/images/71670000/jpg/_71670164_71670157.jpg")
+        assert(feed.items.head.thumbs.head.url === "http://news.bbcimg.co.uk/media/images/71670000/jpg/_71670164_71670157.jpg")
+      }
+      it("thumbnail width for head thumbnail of head item should = 66") {
+        assert(feed.items.head.thumbs.head.width === "66")
+      }
+      it("thumbnail width for head thumbnail of head item should = 49") {
+        assert(feed.items.head.thumbs.head.height === "49")
       }
     }
   } 

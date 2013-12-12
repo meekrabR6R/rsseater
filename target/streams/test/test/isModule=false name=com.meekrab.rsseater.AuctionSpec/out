@@ -13,5 +13,7 @@
 [0m[[0minfo[0m] [0m[32m- title of head item should = 'Thousands file past Mandela's body'[0m[0m
 [0m[[0minfo[0m] [0m[32m- description of head item should = 'South Africans are queuing in their thousands to view the body of former President Nelson Mandela, which is lying in state for three days.'[0m[0m
 [0m[[0minfo[0m] [0m[32m- link for head item should = 'http://www.bbc.co.uk/news/world-africa-25328266#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'[0m[0m
-[0m[[0minfo[0m] [0m[31m- thumbnail url for head item should = 'http://news.bbcimg.co.uk/media/images/71670000/jpg/_71670164_71670157.jpg' *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  "[]" did not equal "[http://news.bbcimg.co.uk/media/images/71670000/jpg/_71670164_71670157.jpg]" (ReaderSpec.scala:54)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have 2 thumbs[0m[0m
+[0m[[0minfo[0m] [0m[32m- thumbnail url for head item should = 'http://news.bbcimg.co.uk/media/images/71670000/jpg/_71670164_71670157.jpg'[0m[0m
+[0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 66[0m[0m
+[0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 49[0m[0m
