@@ -1,4 +1,4 @@
-name := "Auction"
+name := "RSSEater"
 
 organization := "com.meekrab"
 
@@ -8,8 +8,8 @@ scalaVersion := "2.10.2"
 
 libraryDependencies ++= Seq(
   "org.scalatest" % "scalatest_2.10" % "1.9.2" % "test",
-  "org.mongodb" %% "casbah" % "2.6.3"
+  "org.scalaj" %% "scalaj-http" % "0.3.12"
 )
 
-initialCommands := "import com.meekrab.auction._"
+initialCommands := "import com.meekrab.rsseater._"
 
