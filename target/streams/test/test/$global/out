@@ -1,6 +1,5 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.meekrab.rsseater.AuctionSpec, sbt.SubclassFingerprintWrapper@2a2bc8f0, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.meekrab.rsseater.AuctionSpec, sbt.SubclassFingerprintWrapper@4a2de8e7, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0mSummary for ScalaTest not available.[0m
-[0m[[31merror[0m] [0mFailed: Total 17, Failed 1, Errors 0, Passed 16[0m
-[0m[[31merror[0m] [0mFailed tests:[0m
-[0m[[31merror[0m] [0m	com.meekrab.rsseater.AuctionSpec[0m
-[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+[0m[[0minfo[0m] [0mPassed: Total 17, Failed 0, Errors 0, Passed 17[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	com.meekrab.rsseater.AuctionSpec[0m

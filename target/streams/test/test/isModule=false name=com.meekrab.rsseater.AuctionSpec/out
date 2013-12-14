@@ -18,5 +18,4 @@
 [0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 66[0m[0m
 [0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 49[0m[0m
 [0m[[0minfo[0m] [0m[32mStoring XML [0m[0m
-[0m[[0minfo[0m] [0m[31m- should store in /assets *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  2 did not equal 1 (ReaderSpec.scala:70)[0m[0m
+[0m[[0minfo[0m] [0m[32m- should store in /assets[0m[0m

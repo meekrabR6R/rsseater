@@ -107,3 +107,5 @@ test
 tet
 test
 git add .
+console
+test
