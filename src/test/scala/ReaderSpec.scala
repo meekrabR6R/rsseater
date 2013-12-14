@@ -63,6 +63,13 @@ class AuctionSpec extends FunSpec {
         assert(feed.items.head.thumbs.head.height === "49")
       }
     }
+
+    describe("Storing XML") {
+      it("should store in /assets") {
+        feed.store("/home/meekrabr6r/projects/rsseater/src/test/assets/store.xml")
+        assert(1 + 1 === 1)
+      }
+    }
   } 
 }
 

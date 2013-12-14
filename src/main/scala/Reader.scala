@@ -2,6 +2,8 @@ package com.meekrab.rsseater
 
 import scalaj.http.Http
 import scala.xml._
+import sys.process._
+import java.io._
 
 case class Thumb(url: String, width: String, height: String)
 
@@ -35,8 +37,15 @@ class FeedReader(feed: scala.xml.NodeSeq) {
   val category = (channel \ "category").text
   val desc = (channel \ "description").text
   val image = Image(channel \ "image")
+
   val items: List[Item] = 
     (for(item <- (channel \ "item")) yield { Item(item) }).toList
+
+  def store(path: String) = {
+    val writer = new PrintWriter(new File(path))
+    writer.write(feed.toString)
+    writer.close
+  }
 }
 
 case class Feed(url: String) extends FeedReader(Http(url).asXml)
