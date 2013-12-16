@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.meekrab#rsseater_2.10;0.0.1 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.meekrab#rsseater_2.10;0.0.1->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c966553[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ca2a729[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -212,7 +212,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 729ms :: artifacts dl 34ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 427ms :: artifacts dl 43ms[0m
 [0m[[0mdebug[0m] [0m	report for com.meekrab#rsseater_2.10;0.0.1 compile produced in /home/meekrabr6r/projects/rsseater/target/resolution-cache/reports/com.meekrab-rsseater_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.meekrab#rsseater_2.10;0.0.1 runtime produced in /home/meekrabr6r/projects/rsseater/target/resolution-cache/reports/com.meekrab-rsseater_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.meekrab#rsseater_2.10;0.0.1 test produced in /home/meekrabr6r/projects/rsseater/target/resolution-cache/reports/com.meekrab-rsseater_2.10-test.xml[0m
@@ -226,5 +226,5 @@
 [0m[[0mdebug[0m] [0m	report for com.meekrab#rsseater_2.10;0.0.1 docs produced in /home/meekrabr6r/projects/rsseater/target/resolution-cache/reports/com.meekrab-rsseater_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.meekrab#rsseater_2.10;0.0.1 pom produced in /home/meekrabr6r/projects/rsseater/target/resolution-cache/reports/com.meekrab-rsseater_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.meekrab#rsseater_2.10;0.0.1 scala-tool produced in /home/meekrabr6r/projects/rsseater/target/resolution-cache/reports/com.meekrab-rsseater_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (729ms resolve - 34ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (427ms resolve - 43ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -109,3 +109,27 @@ test
 git add .
 console
 test
+one-jar
+one-jar:help
+one-jar: help
+one-jar: *
+one-jar: '*'
+one-jar
+console
+one-jar
+console
+one-jar
+clean
+one-jar
+clean
+package
+clean
+one-jar
+clean
+one-jar
+clean
+one-jar
+clean
+one-jar
+clean
+assembly
