@@ -4,7 +4,7 @@
 		module="rsseater_2.10"
 		revision="0.0.1"
 		status="integration"
-		publication="20131215232103"
+		publication="20131216161949"
 	>
 		<description>
 		RSSEater
@@ -36,5 +36,6 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.10" rev="1.9.2" conf="test->default(compile)"/>
 		<dependency org="org.scalaj" name="scalaj-http_2.10" rev="0.3.12" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-json_2.10" rev="2.2.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -50,4 +50,3 @@ class FeedReader(feed: scala.xml.NodeSeq) {
 
 case class Feed(url: String) extends FeedReader(Http(url).asXml)
 case class Local(path: String) extends FeedReader(XML.load(path))
-

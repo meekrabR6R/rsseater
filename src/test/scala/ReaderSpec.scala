@@ -8,7 +8,7 @@ trait TestRunner {
   val feed = Local("src/test/assets/test.xml")
 }
 
-class AuctionSpec extends FunSpec {
+class ReaderSpec extends FunSpec {
   new TestRunner {  
     describe("Feed elements") {
       it("title should = 'BBC News - World'"){

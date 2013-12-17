@@ -133,3 +133,13 @@ clean
 one-jar
 clean
 assembly
+console
+import play.api.libs.json._
+console
+consle
+console
+scala
+console
+console -deprecation
+console
+test
