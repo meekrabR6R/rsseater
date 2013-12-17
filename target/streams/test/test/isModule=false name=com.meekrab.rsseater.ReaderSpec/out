@@ -18,4 +18,16 @@
 [0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 66[0m[0m
 [0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 49[0m[0m
 [0m[[0minfo[0m] [0m[32mStoring XML [0m[0m
-[0m[[0minfo[0m] [0m[32m- should store in /assets[0m[0m
+[0m[[0minfo[0m] [0m[31m- should store in /assets *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.io.FileNotFoundException: \home\meekrabr6r\projects\rsseater\src\test\assets\store.xml (The system cannot find the path specified)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.open(Native Method)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.<init>(Unknown Source)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.FileOutputStream.<init>(Unknown Source)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at java.io.PrintWriter.<init>(Unknown Source)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.meekrab.rsseater.FeedReader.store(Reader.scala:45)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.meekrab.rsseater.ReaderSpec$$anon$1$$anonfun$3$$anonfun$apply$mcV$sp$17.apply$mcV$sp(ReaderSpec.scala:69)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.meekrab.rsseater.ReaderSpec$$anon$1$$anonfun$3$$anonfun$apply$mcV$sp$17.apply(ReaderSpec.scala:68)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at com.meekrab.rsseater.ReaderSpec$$anon$1$$anonfun$3$$anonfun$apply$mcV$sp$17.apply(ReaderSpec.scala:68)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.FunSpecLike$$anon$1.apply(FunSpecLike.scala:387)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.Suite$class.withFixture(Suite.scala:1974)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

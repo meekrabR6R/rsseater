@@ -26,6 +26,12 @@ object GoogleFeedFinder {
   case class FeedList(json: JsValue) {
     val responseData = json \ "responseData"
     val query = (responseData \ "query").as[String]
-    val entries = (responseData \ "entries" \\ "url")
+    val entries = (responseData \ "entries").as[List[JsValue]].map({i => Entry((i \ "url").as[String], 
+                                                                               (i \ "title").as[String],
+                                                                               (i \ "contentSnippet").as[String],
+                                                                               (i \ "link").as[String]
+                                                                  )})
   }
+
+  case class Entry(url: String, title: String, contentSnippet: String, link: String)
 }
