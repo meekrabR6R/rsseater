@@ -9,8 +9,8 @@ object GoogleFeedFinder {
 	  try {
 	    val feeds = Http("https://ajax.googleapis.com/ajax/services/feed/find?v=1.0")
 	                .param("q", query)
-                  .option(HttpOptions.connTimeout(100000000))
-		              .option(HttpOptions.readTimeout(500000000))
+                        .option(HttpOptions.connTimeout(100000000))
+		        .option(HttpOptions.readTimeout(500000000))
 	                .option(HttpOptions.allowUnsafeSSL).asString
 	    
 	    FeedList(Json.parse(feeds))
