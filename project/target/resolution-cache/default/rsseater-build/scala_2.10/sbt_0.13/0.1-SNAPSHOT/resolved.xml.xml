@@ -4,7 +4,7 @@
 		module="rsseater-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20131217091346"
+		publication="20131217221448"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>

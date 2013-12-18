@@ -1,0 +1,20 @@
+{
+	"responseData": {
+		"query":"Skyrim",
+		"entries":[
+					{
+						"url":"http://cms.elderscrolls.com/feeds/rss/index.php?locale\u003den-us",
+						"title":"The Elder Scrolls Official Site | \u003cb\u003eSkyrim\u003c/b\u003e - The Elder Scrolls V: \u003cb\u003eSkyrim\u003c/b\u003e",
+						"contentSnippet":"The future of \u003cb\u003eSkyrim\u003c/b\u003e, even the Empire itself, hangs in the balance as they wait for \u003cbr\u003e\nthe prophesized Dragonborn to come; a hero born with the power of The Voice,\u0026nbsp;\u003cb\u003e...\u003c/b\u003e",
+						"link":"http://www.elderscrolls.com/skyrim"
+					},
+					{
+						"url":"http://cms.elderscrolls.com/feeds/rss/index.php?locale\u003den-us",
+						"title":"The Elder Scrolls V: \u003cb\u003eSkyrim\u003c/b\u003e",
+						"contentSnippet":"The official site for The Elder Scrolls series, including The Elder Scrolls V: \u003cb\u003eSkyrim\u003c/b\u003e. \u003cbr\u003e\n11.11.11.",
+						"link":"http://www.elderscrolls.com/"
+					}
+		]}, 
+		"responseDetails": null, 
+		"responseStatus": 200
+}

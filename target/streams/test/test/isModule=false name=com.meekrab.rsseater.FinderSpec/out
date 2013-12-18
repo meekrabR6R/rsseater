@@ -1,3 +1,6 @@
 [0m[[0minfo[0m] [0m[32mFinderSpec:[0m[0m
 [0m[[0minfo[0m] [0m[32mQuery text [0m[0m
 [0m[[0minfo[0m] [0m[32m- should = 'Skyrim'[0m[0m
+[0m[[0minfo[0m] [0m[32mFirst feed [0m[0m
+[0m[[0minfo[0m] [0m[32m- url should = 'http://cms.elderscrolls.com/feeds/rss/index.php?locale=en-us'[0m[0m
+[0m[[0minfo[0m] [0m[32m- title should = 'The Elder Scrolls Official Site | <b>Skyrim</b> - The Elder Scrolls V: <b>Skyrim</b>'[0m[0m
