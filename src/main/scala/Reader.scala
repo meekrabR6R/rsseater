@@ -1,6 +1,6 @@
 package com.meekrab.rsseater
 
-import scalaj.http.Http
+import scalaj.http._
 import scala.xml._
 import sys.process._
 import java.io._
@@ -48,5 +48,6 @@ class FeedReader(feed: scala.xml.NodeSeq) {
   }
 }
 
-case class Feed(url: String) extends FeedReader(Http(url).asXml)
+case class Feed(url: String) extends FeedReader(Http(url).option(HttpOptions.connTimeout(100000000))
+                                                         .option(HttpOptions.readTimeout(500000000)).asXml)
 case class Local(path: String) extends FeedReader(XML.load(path))
