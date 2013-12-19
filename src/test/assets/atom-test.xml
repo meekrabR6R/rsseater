@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Elder Scrolls Official News</title>
+	<link href="http://elderscrolls.com/" ></link>
+	<id>urn:uuid:86328bf6-5523-eeb1-d6e4-b2b09399ee80</id>
+	<description type="html" ><![CDATA[Elder Scrolls : Official News and Updates]]></description>
+	<entry>
+		<title>The Elder Scrolls Anthology Available today!</title>
+		<link href="http://cms.elderscrolls.com/news/index.php" ></link>
+		<id>urn:uuid:1bb8a4ea-2ad3-c69c-5811-1de519dc9758</id>
+		<updated>2013-09-10T10:00:58-04:00</updated>
+		<summary type="html" ><![CDATA[Celebrate the Elder Scrolls today with the release of The Elder Scrolls Anthology -- available today on PC for $79.99.
+
+			This premium box set (shown above) includes all five main games from the series – Arena, Daggerfall, Morrowind, Oblivion, and Skyrim – as well all the official add-ons and expansions for Morrowind, Oblivion, and Skyrim.
+			]]>
+		</summary>
+	</entry>
+	<entry>
+		<title>Skyrim Legendary Edition Now Available in North America</title>
+		<link href="http://cms.elderscrolls.com/news/index.php" ></link>
+		<id>urn:uuid:1bb8a4ea-2ad3-c69c-5811-1de519dc9758</id>
+		<updated>2013-06-04T13:47:24-04:00</updated>
+		<summary type="html" ><![CDATA[Get the complete Skyrim experience today.
+
+			The Elder Scrolls V: Skyrim Legendary Edition is now available on PlayStation 3, Xbox 360, and PC in North America. Legendary Edition includes the original game, official add-ons and all title updates including combat cameras and mounted combat. For our friends in Europe, Legendary Edition will be available this Friday, June 7th.
+
+			]]>
+		</summary>
+	</entry>
+</feed>

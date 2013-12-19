@@ -5,6 +5,8 @@ import scala.xml._
 import sys.process._
 import java.io._
 
+trait Reader
+
 case class Thumb(url: String, width: String, height: String)
 
 case class Item(item: scala.xml.Node) {
@@ -30,7 +32,7 @@ case class Image(image: scala.xml.NodeSeq) {
   val height = (image \ "height").text
 }
 
-class FeedReader(feed: scala.xml.NodeSeq) {
+class RSSReader(feed: scala.xml.NodeSeq) extends Reader {
   private val channel = feed \ "channel"
   val title = (channel \ "title").text
   val link = (channel \ "link").text
@@ -48,6 +50,6 @@ class FeedReader(feed: scala.xml.NodeSeq) {
   }
 }
 
-case class Feed(url: String) extends FeedReader(Http(url).option(HttpOptions.connTimeout(100000000))
+case class Feed(url: String) extends RSSReader(Http(url).option(HttpOptions.connTimeout(100000000))
                                                          .option(HttpOptions.readTimeout(500000000)).asXml)
-case class Local(path: String) extends FeedReader(XML.load(path))
+case class Local(path: String) extends RSSReader(XML.load(path))
