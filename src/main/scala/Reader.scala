@@ -13,12 +13,14 @@ case class Item(item: scala.xml.Node) {
   val title = (item \ "title").text
   val link = (item \ "link").text
   val desc = (item \ "description").text
+  
   val thumbs = 
     (for(thumb <- (item \ "thumbnail")) 
       yield { Thumb((thumb \ "@url").text, 
                     (thumb \ "@width").text, 
                     (thumb \ "@height").text)
-            }).toList
+    }).toList
+  
   val pubDate = (item \ "pubDate").text
   val category = (item \ "category").text
 }
@@ -51,5 +53,5 @@ class RSSReader(feed: scala.xml.NodeSeq) extends Reader {
 }
 
 case class Feed(url: String) extends RSSReader(Http(url).option(HttpOptions.connTimeout(100000000))
-                                                         .option(HttpOptions.readTimeout(500000000)).asXml)
+                                                        .option(HttpOptions.readTimeout(500000000)).asXml)
 case class Local(path: String) extends RSSReader(XML.load(path))
