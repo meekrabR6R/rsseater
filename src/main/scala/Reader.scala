@@ -5,11 +5,18 @@ import scala.xml._
 import sys.process._
 import java.io._
 
-trait Reader
+trait Feed {
+  val title: String
+  def store(path: String)
+}
+
+trait Elem
 
 case class Thumb(url: String, width: String, height: String)
 
-case class Item(item: scala.xml.Node) {
+case class Entry(item: scala.xml.Node) extends Elem
+
+case class Item(item: scala.xml.Node) extends Elem {
   val title = (item \ "title").text
   val link = (item \ "link").text
   val desc = (item \ "description").text
@@ -34,7 +41,7 @@ case class Image(image: scala.xml.NodeSeq) {
   val height = (image \ "height").text
 }
 
-class RSSReader(feed: scala.xml.NodeSeq) extends Reader {
+class RSSFeed(feed: scala.xml.NodeSeq) extends Feed {
   private val channel = feed \ "channel"
   val title = (channel \ "title").text
   val link = (channel \ "link").text
@@ -52,6 +59,15 @@ class RSSReader(feed: scala.xml.NodeSeq) extends Reader {
   }
 }
 
-case class Feed(url: String) extends RSSReader(Http(url).option(HttpOptions.connTimeout(100000000))
+class AtomFeed(atomFeed: scala.xml.NodeSeq) extends Feed {
+  private val feed = atomFeed \ "feed"
+  val title = (feed \ "title").text
+  val link = (feed \ "link").text
+  val id = (feed \ "id").text
+  val desc = (feed \ "description").text
+  def store(path: String) = Unit
+}
+
+case class FeedReader(url: String) extends RSSFeed(Http(url).option(HttpOptions.connTimeout(100000000))
                                                         .option(HttpOptions.readTimeout(500000000)).asXml)
-case class Local(path: String) extends RSSReader(XML.load(path))
+case class LocalReader(path: String) extends RSSFeed(XML.load(path))

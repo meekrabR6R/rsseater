@@ -5,7 +5,7 @@ import java.io._
 import scala.xml._
 
 trait TestRunner {
-  val feed = Local("src/test/assets/test.xml")
+  val feed = LocalReader("src/test/assets/rss-test.xml")
 }
 
 class ReaderSpec extends FunSpec {
@@ -67,7 +67,7 @@ class ReaderSpec extends FunSpec {
     describe("Storing XML") {
       it("should store in /assets") {
         feed.store("/home/meekrabr6r/projects/rsseater/src/test/assets/store.xml")
-        val loc = Local("/home/meekrabr6r/projects/rsseater/src/test/assets/store.xml")
+        val loc = LocalReader("/home/meekrabr6r/projects/rsseater/src/test/assets/store.xml")
         assert(loc.title === "BBC News - World")
         new File("/home/meekrabr6r/projects/rsseater/src/test/assets/store.xml").delete
       }

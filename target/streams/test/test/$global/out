@@ -1,5 +1,5 @@
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.meekrab.rsseater.ReaderSpec, sbt.SubclassFingerprintWrapper@777f1a1, false, [SuiteSelector])[0m
-[0m[[0mdebug[0m] [0mRunning TaskDef(com.meekrab.rsseater.FinderSpec, sbt.SubclassFingerprintWrapper@777f1a1, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.meekrab.rsseater.ReaderSpec, sbt.SubclassFingerprintWrapper@5b420896, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.meekrab.rsseater.FinderSpec, sbt.SubclassFingerprintWrapper@5b420896, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0mSummary for ScalaTest not available.[0m
 [0m[[0minfo[0m] [0mPassed: Total 20, Failed 0, Errors 0, Passed 20[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
