@@ -12,7 +12,7 @@ object GoogleFeedFinder {
                   .option(HttpOptions.connTimeout(100000000))
                   .option(HttpOptions.readTimeout(500000000))
                   .option(HttpOptions.allowUnsafeSSL).asString
-	    
+
       FeedList(Json.parse(feeds))
     }
     catch {
