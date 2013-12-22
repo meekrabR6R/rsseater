@@ -5,7 +5,6 @@ import play.api.libs.json._
 import play.api.libs.functional._
 
 trait Tester {
-
   val feeds = GoogleFeedFinder("Skyrim")  
   val testJson = scala.io.Source.fromFile("src/test/assets/test.json").mkString
   val testFeeds = GoogleFeedFinder.FeedList(Json.parse(testJson))

@@ -1,5 +1,5 @@
 [0m[[0minfo[0m] [0m[32mReaderSpec:[0m[0m
-[0m[[0minfo[0m] [0m[32mFeed elements [0m[0m
+[0m[[0minfo[0m] [0m[32mRSS elements [0m[0m
 [0m[[0minfo[0m] [0m[32m- title should = 'BBC News - World'[0m[0m
 [0m[[0minfo[0m] [0m[32m- link should = 'http://www.bbc.co.uk/news/world/#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'[0m[0m
 [0m[[0minfo[0m] [0m[32m- desc should = 'The latest stories from the World section of the BBC News web site.'[0m[0m
@@ -8,7 +8,7 @@
 [0m[[0minfo[0m] [0m[32m- image link should = 'http://www.bbc.co.uk/news/world/#sa-ns_mchannel=rss&ns_source=PublicRSS20-sa'[0m[0m
 [0m[[0minfo[0m] [0m[32m- image width should be 120[0m[0m
 [0m[[0minfo[0m] [0m[32m- image height should be 60[0m[0m
-[0m[[0minfo[0m] [0m[32mFeed items [0m[0m
+[0m[[0minfo[0m] [0m[32mrss items [0m[0m
 [0m[[0minfo[0m] [0m[32m- should have 3 items[0m[0m
 [0m[[0minfo[0m] [0m[32m- title of head item should = 'Thousands file past Mandela's body'[0m[0m
 [0m[[0minfo[0m] [0m[32m- description of head item should = 'South Africans are queuing in their thousands to view the body of former President Nelson Mandela, which is lying in state for three days.'[0m[0m
@@ -19,3 +19,12 @@
 [0m[[0minfo[0m] [0m[32m- thumbnail width for head thumbnail of head item should = 49[0m[0m
 [0m[[0minfo[0m] [0m[32mStoring XML [0m[0m
 [0m[[0minfo[0m] [0m[32m- should store in /assets[0m[0m
+[0m[[0minfo[0m] [0m[32mAtom elements [0m[0m
+[0m[[0minfo[0m] [0m[32m- title should = 'Elder Scrolls Official News'[0m[0m
+[0m[[0minfo[0m] [0m[32m- link should = 'http://elderscrolls.com/'[0m[0m
+[0m[[0minfo[0m] [0m[32m- id should = 'urn:uuid:86328bf6-5523-eeb1-d6e4-b2b09399ee80'[0m[0m
+[0m[[0minfo[0m] [0m[32m- desc should = 'Elder Scrolls : Official News and Updates'[0m[0m
+[0m[[0minfo[0m] [0m[32matom entries [0m[0m
+[0m[[0minfo[0m] [0m[32m- should have 2 items[0m[0m
+[0m[[0minfo[0m] [0m[32m- title of head entry should = 'The Elder Scrolls Anthology Available today!'[0m[0m
+[0m[[0minfo[0m] [0m[32m- link for head item should = 'http://cms.elderscrolls.com/news/index.php'[0m[0m

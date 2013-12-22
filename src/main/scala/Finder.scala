@@ -4,6 +4,10 @@ import play.api.libs.json._
 import play.api.libs.functional._
 import scalaj.http._
 
+/*
+ * Singleton which queries Google's Feed API and returns a JSON formatted
+ * list of results. 
+ */
 object GoogleFeedFinder {
   def apply(query: String) = { 
     try {
@@ -23,6 +27,10 @@ object GoogleFeedFinder {
     }
   }
 
+  /*
+   * Hold feed list elements
+   * @param json: JSON returned from Google Feed API
+   */
   case class FeedList(json: JsValue) {
     val responseData = json \ "responseData"
     val query = (responseData \ "query").as[String]
@@ -33,5 +41,12 @@ object GoogleFeedFinder {
                                                                   )})
   }
 
+  /*
+   * Contains entry elements
+   * @param url: URL of entry
+   * @param title: Title of entry
+   * @param contentSnippet: Snippet of entry
+   * @param link: Link to source
+   */
   case class Entry(url: String, title: String, contentSnippet: String, link: String)
 }
